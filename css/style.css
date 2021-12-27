@@ -1,5 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: linear-gradient(287.77deg, #162127 13.16%, #152a35 72.99%);
+  font-family: "PT Mono", monospace;
+  line-height: 1.7;
+  color: #162127;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */
