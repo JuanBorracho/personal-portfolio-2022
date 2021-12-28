@@ -1,0 +1,24 @@
+h1,
+h2,
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  color: $color-yellow;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+body {
+  font-family: 'PT Mono', monospace;
+}
+
+.white {
+  color: $color-grey;
+}
+
+.blue-thin {
+  color: $color-blue;
+  font-weight: 300;
+}

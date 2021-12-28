@@ -1,0 +1,41 @@
+.hero {
+  background: $background-gradient-dark;
+
+  &__container {
+    margin: 0 14rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 5rem;
+      background-color: $color-red;
+      box-shadow: 0 0 0 0 rgb(235, 87, 70);
+      transform: scale(1);
+      animation: pulse 3s infinite;
+      z-index: 1;
+      margin: -2.5rem -1.8rem;
+      position: relative;
+
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: $color-grey;
+  }
+}
