@@ -11,20 +11,35 @@ html {
 }
 
 body {
-  background: linear-gradient(287.77deg, #162127 13.16%, #152a35 72.99%);
   font-family: "PT Mono", monospace;
   line-height: 1.7;
   color: #162127;
   box-sizing: border-box;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
 
 a {
   text-decoration: none;
+  color: #d9584a;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
 .header {
   padding: 3rem 6rem;
-  background: transparent;
+  background: linear-gradient(287.77deg, #162127 13.16%, #152a35 72.99%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,10 +57,18 @@ a {
   font-weight: 700;
   font-size: 2rem;
   color: #f2f2f2;
-  border-bottom: 4px solid transparent;
+  border-bottom: 0.3rem solid transparent;
   padding-bottom: 0.2rem;
   transition: all 0.3s ease-in;
-  margin-left: 30px;
+  margin-left: 3rem;
+}
+.header__a:hover {
+  color: #ffd866;
+  border-color: #ffd866;
+}
+.header__a[data-selected] {
+  color: #ffd866;
+  border-bottom: 0.3rem solid #ffd866;
 }
 
 /*# sourceMappingURL=style.css.map */

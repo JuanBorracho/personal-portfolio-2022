@@ -11,13 +11,28 @@ html {
 }
 
 body {
-  background: $background-gradient-dark;
   font-family: 'PT Mono', monospace;
   line-height: 1.7;
-  color: #162127;
+  color: $color-black;
   box-sizing: border-box;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
 
 a {
   text-decoration: none;
+  color: $color-red;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
