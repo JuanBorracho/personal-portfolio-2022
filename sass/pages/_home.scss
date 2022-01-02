@@ -1,22 +1,27 @@
 .hero {
   background: $background-gradient-dark;
+  display: flex;
+  justify-content: center;
 
   &__container {
-    margin: 0 14rem;
+    padding-top: 2rem;
     display: flex;
     justify-content: space-between;
+    padding: 2rem 4rem 0 6rem;
   }
 
   &__title {
     position: relative;
     z-index: 3;
     text-shadow: 0.2rem 0.6rem 0.4rem rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
   }
 
   &__left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding-top: 6rem;
+    max-width: 70rem;
 
     &::before {
       content: '';
@@ -34,8 +39,29 @@
     }
   }
 
+  &__img {
+    max-width: 45rem;
+  }
+
   &__text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: $color-grey;
+    margin-bottom: 2rem;
+  }
+
+  &__button-box {
+    margin-top: 2rem;
+  }
+}
+
+.my-work {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+
+  &__text {
+    font-size: 1.6rem;
+    max-width: 70rem;
   }
 }
