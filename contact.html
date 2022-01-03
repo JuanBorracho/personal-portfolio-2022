@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Stanley | Contact</title>
+    <meta name="description" content="Send me a message and let's talk!" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Work+Sans:wght@300;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./img/john-stanley-portfolio-favicon.svg"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="./index.html" class="header__link">
+          <img src="/img/john-stanley-logo.svg" class="header__logo" />
+        </a>
+      </div>
+      <nav class="header__nav">
+        <a class="header__a" href="./index.html">Portfolio</a>
+        <a class="header__a" href="./about.html">About</a>
+        <a class="header__a" href="./contact.html" data-selected="selected"
+          >Contact</a
+        >
+      </nav>
+    </header>
+
+    <section class="section">
+      <section class="section__background">
+        <section class="section__container">
+          <div class="section-title">
+            <h2 class="section-title__heading">.drop-me-a-line!</h2>
+            <img
+              src="./img/equality-operator-graphic.svg"
+              class="section-title__img"
+            />
+          </div>
+
+          <!-- FORM -->
+
+          <section class="contact-form">
+            <form
+              action="https://formspree.io/f/xyylkryb"
+              method="POST"
+              class="contact-form__container"
+            >
+              <label for="full-name" class="contact-form__label"
+                >Your Name:</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="full-name"
+                required=""
+                class="contact-form__input"
+              />
+              <label for="email" class="contact-form__label">
+                Your email:
+              </label>
+              <input type="email" name="_replyto" class="contact-form__input" />
+              <label class="contact-form__label"> Your message: </label>
+              <textarea
+                name="message"
+                class="contact-form__textarea"
+              ></textarea>
+              <button type="submit" class="btn btn--yellow btn--form">
+                Send
+              </button>
+            </form>
+          </section>
+
+          <!-- FORM -->
+        </section>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <section class="footer__container">
+        <p class="footer__copyright">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          - John Stanley
+        </p>
+        <div class="footer__logo-box">
+          <img src="./img/github-logo.svg" class="github-logo" />
+          <img src="./img/linkedin-logo.svg" class="linkedin-logo" />
+        </div>
+        <a href="./contact.html" class="footer__contact">Get in touch</a>
+      </section>
+    </footer>
+  </body>
+</html>

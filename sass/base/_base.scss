@@ -8,14 +8,16 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
+  position: relative;
 }
 
 body {
   line-height: 1.7;
   box-sizing: border-box;
   min-height: 100vh;
+  position: relative;
   text-rendering: optimizeSpeed;
-  // overflow-x: hidden;
 }
 
 a {

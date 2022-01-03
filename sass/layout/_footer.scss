@@ -5,6 +5,9 @@
   font-size: 1.4rem;
   padding: 3rem 6rem;
 
+  position: absolute;
+  bottom: 0;
+
   &__container {
     display: flex;
     align-items: center;
@@ -19,5 +22,9 @@
     display: flex;
     gap: 1rem;
     flex-basis: 30%;
+  }
+
+  &__contact {
+    color: $color-grey;
   }
 }

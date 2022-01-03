@@ -1,15 +1,22 @@
 .section {
+  min-height: 75vh;
+  position: relative;
+  padding-bottom: 10rem;
+
   &__background {
     margin: 4rem;
     background-color: $color-grey;
     display: flex;
     justify-content: center;
+
+    min-height: 75vh;
+    // padding-bottom: 10.8rem;
   }
 
   &__container {
     max-width: 132rem;
     width: 100%;
-    padding-bottom: 6rem;
+    padding-bottom: 12rem;
   }
 }
 

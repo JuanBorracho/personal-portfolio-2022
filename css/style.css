@@ -8,12 +8,15 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
+  position: relative;
 }
 
 body {
   line-height: 1.7;
   box-sizing: border-box;
   min-height: 100vh;
+  position: relative;
   text-rendering: optimizeSpeed;
 }
 
@@ -154,6 +157,9 @@ body {
   width: 12rem;
   height: 4.2rem;
 }
+.btn--form {
+  margin: 0;
+}
 
 .portfolio {
   padding: 0 2rem;
@@ -177,16 +183,17 @@ body {
 }
 .portfolio-item__image {
   width: 100%;
+  display: block;
 }
 .portfolio-item__label {
   background-color: #ffd866;
   display: inline-block;
   padding: 0.2rem 0.4rem;
   font-size: 1.4rem;
-  transform: translateY(-70%);
+  transform: translateY(-50%);
 }
 .portfolio-item__title {
-  margin-top: -1.5rem;
+  margin-top: -0.5rem;
 }
 .portfolio-item__sub-title {
   font-weight: 600;
@@ -205,16 +212,48 @@ body {
   justify-content: center;
 }
 
+.contact-form {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.contact-form__container {
+  display: flex;
+  flex-direction: column;
+  width: 90rem;
+}
+.contact-form__label {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+.contact-form__input {
+  padding: 2rem;
+  background-color: #effbf8;
+  border: 0.1rem solid #162127;
+}
+.contact-form__textarea {
+  padding: 2rem 2rem 10rem 2rem;
+  margin-bottom: 3rem;
+  background-color: #effbf8;
+  border: 0.1rem solid #162127;
+}
+
+.section {
+  min-height: 75vh;
+  position: relative;
+  padding-bottom: 10rem;
+}
 .section__background {
   margin: 4rem;
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
+  min-height: 75vh;
 }
 .section__container {
   max-width: 132rem;
   width: 100%;
-  padding-bottom: 6rem;
+  padding-bottom: 12rem;
 }
 
 .section-title {
@@ -268,6 +307,8 @@ body {
   color: #f2f2f2;
   font-size: 1.4rem;
   padding: 3rem 6rem;
+  position: absolute;
+  bottom: 0;
 }
 .footer__container {
   display: flex;
@@ -281,6 +322,9 @@ body {
   display: flex;
   gap: 1rem;
   flex-basis: 30%;
+}
+.footer__contact {
+  color: #f2f2f2;
 }
 
 .hero {
