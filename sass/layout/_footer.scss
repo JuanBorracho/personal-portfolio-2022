@@ -1,0 +1,23 @@
+.footer {
+  background: $background-gradient-dark;
+  width: 100%;
+  color: $color-grey;
+  font-size: 1.4rem;
+  padding: 3rem 6rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    flex-basis: 32%;
+  }
+
+  &__logo-box {
+    display: flex;
+    gap: 1rem;
+    flex-basis: 30%;
+  }
+}

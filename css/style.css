@@ -155,26 +155,6 @@ body {
   height: 4.2rem;
 }
 
-.section__background {
-  margin: 4rem;
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-}
-.section__container {
-  max-width: 132rem;
-  width: 100%;
-  padding-bottom: 6rem;
-}
-
-.section-title {
-  transform: translateY(-40%);
-  text-align: center;
-}
-.section-title__heading {
-  color: #162127;
-}
-
 .portfolio {
   padding: 0 2rem;
   margin-top: 6rem;
@@ -225,6 +205,26 @@ body {
   justify-content: center;
 }
 
+.section__background {
+  margin: 4rem;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+.section__container {
+  max-width: 132rem;
+  width: 100%;
+  padding-bottom: 6rem;
+}
+
+.section-title {
+  transform: translateY(-40%);
+  text-align: center;
+}
+.section-title__heading {
+  color: #162127;
+}
+
 .header {
   padding: 3rem 6rem;
   background: linear-gradient(287.77deg, #162127 13.16%, #152a35 72.99%);
@@ -260,6 +260,27 @@ body {
 .header__a[data-selected] {
   color: #ffd866;
   border-bottom: 0.3rem solid #ffd866;
+}
+
+.footer {
+  background: linear-gradient(287.77deg, #162127 13.16%, #152a35 72.99%);
+  width: 100%;
+  color: #f2f2f2;
+  font-size: 1.4rem;
+  padding: 3rem 6rem;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__copyright {
+  flex-basis: 32%;
+}
+.footer__logo-box {
+  display: flex;
+  gap: 1rem;
+  flex-basis: 30%;
 }
 
 .hero {
