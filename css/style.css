@@ -53,13 +53,19 @@ h1,
 h2,
 h3 {
   font-family: "Work Sans", sans-serif;
-  font-weight: 800;
   color: #ffd866;
+  font-weight: 800;
 }
 
 h1,
 h2 {
   font-size: 3.6rem;
+  font-weight: 800;
+}
+
+h3 {
+  color: #162127;
+  font-size: 2.2rem;
 }
 
 body {
@@ -170,22 +176,49 @@ body {
 }
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 36rem));
+  justify-content: center;
 }
 
 .portfolio-item {
-  padding: 2rem;
-  margin: 3rem 1.5rem;
-  flex: 1;
+  padding: 0 2rem 2rem 2rem;
+}
+.portfolio-item:hover {
+  box-shadow: 0.1rem 0.7rem 1rem 0.4rem rgba(0, 0, 0, 0.08);
+}
+.portfolio-item__outer {
   background-color: #fff;
   text-align: center;
   box-shadow: 0.1rem 0.7rem 1rem 0.4rem rgba(0, 0, 0, 0.08);
 }
+.portfolio-item__image {
+  width: 100%;
+}
+.portfolio-item__label {
+  background-color: #ffd866;
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.4rem;
+  transform: translateY(-70%);
+}
+.portfolio-item__title {
+  margin-top: -1.5rem;
+}
+.portfolio-item__sub-title {
+  font-weight: 600;
+  color: #d9584a;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.24rem;
+  margin: 0.5rem 0 1.5rem 0;
+}
 .portfolio-item__description {
   margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 .portfolio-item__button-box {
   display: flex;

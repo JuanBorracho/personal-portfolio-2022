@@ -23,23 +23,68 @@
 }
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-evenly;
+  // align-items: stretch;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 36rem));
+  justify-content: center;
 }
 
 .portfolio-item {
-  padding: 2rem;
-  margin: 3rem 1.5rem;
-  flex: 1;
-  // width: 40rem;
-  background-color: #fff;
-  text-align: center;
-  box-shadow: 0.1rem 0.7rem 1rem 0.4rem rgba(0, 0, 0, 0.08);
+  padding: 0 2rem 2rem 2rem;
+  // margin: 3rem 1.5rem;
+  // flex-shrink: 1;
+  // flex: 1;
+  // flex-basis: 100%;
+  // flex-grow: 1;
+  // max-width: 38rem;
+  // background-color: #fff;
+  // text-align: center;
+  // box-shadow: 0.1rem 0.7rem 1rem 0.4rem rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    box-shadow: 0.1rem 0.7rem 1rem 0.4rem rgba(0, 0, 0, 0.08);
+  }
+
+  &__outer {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0.1rem 0.7rem 1rem 0.4rem rgba(0, 0, 0, 0.08);
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__label {
+    background-color: $color-yellow;
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    font-size: 1.4rem;
+    transform: translateY(-70%);
+  }
+
+  &__title {
+    margin-top: -1.5rem;
+  }
+
+  &__sub-title {
+    font-weight: 600;
+    color: $color-red;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.24rem;
+    margin: 0.5rem 0 1.5rem 0;
+  }
 
   &__description {
     margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
 
   &__button-box {
