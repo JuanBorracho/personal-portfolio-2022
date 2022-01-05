@@ -1,0 +1,25 @@
+.image-block {
+  padding: 1rem 4rem 4rem 2rem;
+  position: relative;
+
+  &__img {
+    max-width: 28rem;
+    position: relative;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      transform: translate(-2rem, 2rem);
+    }
+  }
+
+  &__background {
+    background-color: $color-light-red;
+    width: 28rem;
+    height: 37rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transform: translate(-2rem, 3rem);
+  }
+}

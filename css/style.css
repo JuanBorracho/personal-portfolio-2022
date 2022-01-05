@@ -238,6 +238,29 @@ body {
   border: 0.1rem solid #162127;
 }
 
+.image-block {
+  padding: 1rem 4rem 4rem 2rem;
+  position: relative;
+}
+.image-block__img {
+  max-width: 28rem;
+  position: relative;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+.image-block__img:hover {
+  transform: translate(-2rem, 2rem);
+}
+.image-block__background {
+  background-color: #e99085;
+  width: 28rem;
+  height: 37rem;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  transform: translate(-2rem, 3rem);
+}
+
 .section {
   min-height: 75vh;
   position: relative;
@@ -327,21 +350,27 @@ body {
   color: #f2f2f2;
 }
 
+.about {
+  margin: 6rem 0;
+}
 .about__row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 3rem;
 }
 .about__double-column {
   display: flex;
   flex-direction: column;
-  flex: 2;
-  background-color: #d9584a;
+  flex: 1.5;
 }
 .about__column {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: #91f2df;
+}
+
+.about-item__text {
+  font-size: 1.5rem;
 }
 
 .hero {
