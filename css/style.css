@@ -166,7 +166,7 @@ body {
   margin-top: 6rem;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 36rem));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 36rem));
   justify-content: center;
 }
 
@@ -325,6 +325,23 @@ body {
 }
 .footer__contact {
   color: #f2f2f2;
+}
+
+.about__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__double-column {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  background-color: #d9584a;
+}
+.about__column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #91f2df;
 }
 
 .hero {
