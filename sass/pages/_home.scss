@@ -1,13 +1,16 @@
 .hero {
   background: $background-gradient-dark;
-  display: flex;
-  justify-content: center;
+  max-height: 800px;
+  overflow: hidden;
+  position: relative;
 
   &__container {
     padding-top: 2rem;
     display: flex;
     justify-content: space-between;
     padding: 2rem 4rem 0 6rem;
+    max-width: 132rem;
+    margin: 0 auto;
   }
 
   &__title {

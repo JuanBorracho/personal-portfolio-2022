@@ -11,6 +11,12 @@
     &:hover {
       transform: translate(-2rem, 2rem);
     }
+
+    &--alternate {
+      &:hover {
+        transform: translate(2rem, 2rem);
+      }
+    }
   }
 
   &__background {
@@ -21,5 +27,14 @@
     top: 0;
     z-index: 1;
     transform: translate(-2rem, 3rem);
+
+    &--alternate {
+      background-color: $color-light-blue;
+      right: 0;
+    }
+
+    &--yellow {
+      background-color: $color-light-yellow;
+    }
   }
 }
