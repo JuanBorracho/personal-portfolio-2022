@@ -1,3 +1,18 @@
+/*
+MEDIA QUERY MIXIN
+Breakpoint arguments:
+
+0px - 600px:      Phone
+600px - 1020px:   Tablet
+1020px - 1800px:  Normal styles
+1800px plus:      Big desktop
+
+Remember that em and rem units are not affected by the font-size property set in the html selector. They are only affected by the font size that comes from the browser. Therefore, 1 em is equal to 16px. We need to use em units in media queries because rem units do not work as intended in media queries.
+
+Therefore, 600px divided by 16px = 37.5em
+1020px divided by 16px = 63.75em
+
+*/
 *,
 *::before,
 *::after {
@@ -10,6 +25,21 @@ html {
   font-size: 62.5%;
   height: 100%;
   position: relative;
+}
+@media (max-width: 63.75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -94,6 +124,9 @@ body {
   cursor: pointer;
   border-radius: 0;
   border: none;
+}
+.btn__link {
+  color: #162127;
 }
 .btn--blue {
   background-color: #91f2df;
@@ -355,6 +388,9 @@ body {
   display: flex;
   gap: 1rem;
   flex-basis: 30%;
+}
+.footer__github-logo, .footer__linkedin-logo {
+  max-width: 4.2rem;
 }
 .footer__contact {
   color: #f2f2f2;

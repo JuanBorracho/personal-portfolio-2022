@@ -9,6 +9,10 @@
   border-radius: 0;
   border: none;
 
+  &__link {
+    color: $color-black;
+  }
+
   &--blue {
     background-color: $color-blue;
     border: solid 0.3rem $color-blue;

@@ -7,9 +7,22 @@
 }
 
 html {
-  font-size: 62.5%;
+  // This is what defines 1 rem.
+  font-size: 62.5%; //1 rem = 10px - 10px/16px = 0.625 = 62.5%
   height: 100%;
   position: relative;
+
+  @include respond(tablet) {
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(phone) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%
+  }
 }
 
 body {
