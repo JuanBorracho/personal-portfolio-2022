@@ -3,6 +3,10 @@
   position: relative;
   padding-bottom: 10rem;
 
+  @include respond(phone) {
+    padding-bottom: 20rem;
+  }
+
   &__background {
     margin: 4rem;
     background-color: $color-grey;

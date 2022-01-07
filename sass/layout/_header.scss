@@ -1,5 +1,5 @@
 .header {
-  padding: 3rem 6rem;
+  padding: 3rem 4rem;
   background: $background-gradient-dark;
   display: flex;
   align-items: center;
@@ -17,6 +17,10 @@
   &__nav {
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__a {

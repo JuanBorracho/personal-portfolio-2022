@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Stanley | Contact</title>
-    <meta name="description" content="Send me a message and let's talk!" />
+    <title>John Stanley | Skills</title>
+    <meta
+      name="description"
+      content="A visual representation of my skills in various development, design and digital tools."
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Work+Sans:wght@300;600;700;800;900&display=swap"
@@ -27,11 +30,11 @@
       </div>
       <nav class="header__nav">
         <a class="header__a" href="./index.html">Portfolio</a>
-        <a class="header__a" href="./skills.html">Skills</a>
-        <a class="header__a" href="./about.html">About</a>
-        <a class="header__a" href="./contact.html" data-selected="selected"
-          >Contact</a
+        <a class="header__a" href="./skills.html" data-selected="selected"
+          >Skills</a
         >
+        <a class="header__a" href="./about.html">About</a>
+        <a class="header__a" href="./contact.html">Contact</a>
       </nav>
     </header>
 
@@ -39,47 +42,12 @@
       <section class="section__background">
         <section class="section__container">
           <div class="section-title">
-            <h2 class="section-title__heading">.drop-me-a-line!</h2>
+            <h2 class="section-title__heading">.my-skills</h2>
             <img
               src="./img/equality-operator-graphic.svg"
               class="section-title__img"
             />
           </div>
-
-          <!-- FORM -->
-
-          <section class="contact-form">
-            <form
-              action="https://formspree.io/f/xyylkryb"
-              method="POST"
-              class="contact-form__container"
-            >
-              <label for="full-name" class="contact-form__label"
-                >Your Name:</label
-              >
-              <input
-                type="text"
-                name="name"
-                id="full-name"
-                required=""
-                class="contact-form__input"
-              />
-              <label for="email" class="contact-form__label">
-                Your email:
-              </label>
-              <input type="email" name="_replyto" class="contact-form__input" />
-              <label class="contact-form__label"> Your message: </label>
-              <textarea
-                name="message"
-                class="contact-form__textarea"
-              ></textarea>
-              <button type="submit" class="btn btn--yellow btn--form">
-                Send
-              </button>
-            </form>
-          </section>
-
-          <!-- FORM -->
         </section>
       </section>
     </section>

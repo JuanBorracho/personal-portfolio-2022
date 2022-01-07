@@ -8,3 +8,21 @@
 //   right: 0;
 //   z-index: 12;
 // }
+
+.mobile-icon-container {
+  position: absolute;
+  top: 4.5rem;
+  right: 4rem;
+  z-index: 50;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: none;
+
+  &:active {
+    transform: scale(0.8);
+  }
+
+  @include respond(phone) {
+    display: block;
+  }
+}

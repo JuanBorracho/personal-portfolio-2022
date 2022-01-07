@@ -3,7 +3,7 @@
   width: 100%;
   color: $color-grey;
   font-size: 1.4rem;
-  padding: 3rem 6rem;
+  padding: 3rem 4rem;
 
   position: absolute;
   bottom: 0;
@@ -12,6 +12,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__copyright {
@@ -22,6 +26,10 @@
     display: flex;
     gap: 1rem;
     flex-basis: 30%;
+
+    @include respond(phone) {
+      margin: 2rem 0;
+    }
   }
 
   &__github-logo,
