@@ -1,0 +1,78 @@
+.mobile-menu {
+  clip-path: circle(68% at 100% 0);
+  width: 65rem;
+  height: 65rem;
+  background-color: $color-red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(100%, -100%);
+  transition: all 0.4s ease-in-out;
+  z-index: 12;
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 12rem 2rem 0 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 14;
+  }
+
+  &__exit-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 12;
+
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+
+  &__link {
+    font-size: 2.8rem;
+    color: $color-grey;
+    margin-bottom: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+
+    &[data-selected] {
+      color: $color-yellow;
+    }
+
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+}
+
+.open {
+  transform: translate(0%, 0%);
+}
+
+.none {
+  display: none;
+}
+
+.mobile-icon-container {
+  position: absolute;
+  top: 4.5rem;
+  right: 4rem;
+  z-index: 50;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: none;
+
+  &:active {
+    transform: scale(0.8);
+  }
+
+  @include respond(phone) {
+    display: block;
+  }
+}

@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Work+Sans:wght@300;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./main.css" />
     <link
       rel="shortcut icon"
       type="image/svg"
@@ -22,6 +22,34 @@
     />
   </head>
   <body>
+    <a class="mobile-icon-container" id="hamburger">
+      <img
+        src="./img/mobile-menu-icon-red.svg"
+        class="mobile-icon-container__icon"
+        id="mobile-icon"
+      />
+    </a>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu__links">
+        <a class="mobile-menu__exit-container">
+          <img
+            src="./img/menu-exit-item.svg"
+            class="mobile-menu__exit-icon"
+            id="exit-icon"
+          />
+        </a>
+        <a href="./index.html" class="mobile-menu__link">Portfolio</a>
+        <a
+          href="./skills.html"
+          class="mobile-menu__link"
+          data-selected="selected"
+          >Skills</a
+        >
+        <a href="./about.html" class="mobile-menu__link">About</a>
+        <a href="./contact.html" class="mobile-menu__link">Contact</a>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <a href="./index.html" class="header__link">
@@ -68,5 +96,6 @@
         <a href="./contact.html" class="footer__contact">Get in touch</a>
       </section>
     </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

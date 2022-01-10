@@ -48,6 +48,7 @@ body {
   min-height: 100vh;
   position: relative;
   text-rendering: optimizeSpeed;
+  overflow-x: hidden;
 }
 
 a {
@@ -304,6 +305,61 @@ body {
   background-color: rgba(255, 216, 102, 0.6);
 }
 
+.mobile-menu {
+  clip-path: circle(68% at 100% 0);
+  width: 65rem;
+  height: 65rem;
+  background-color: #d9584a;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(100%, -100%);
+  transition: all 0.4s ease-in-out;
+  z-index: 12;
+}
+.mobile-menu__links {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 12rem 2rem 0 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 14;
+}
+.mobile-menu__exit-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 12;
+}
+.mobile-menu__exit-container:active {
+  transform: scale(0.8);
+}
+.mobile-menu__link {
+  font-size: 2.8rem;
+  color: #f2f2f2;
+  margin-bottom: 1rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+.mobile-menu__link[data-selected] {
+  color: #ffd866;
+}
+.mobile-menu__link:hover {
+  color: #ffd866;
+}
+
+.open {
+  transform: translate(0%, 0%);
+}
+
+.none {
+  display: none;
+}
+
 .mobile-icon-container {
   position: absolute;
   top: 4.5rem;
@@ -528,5 +584,4 @@ body {
   font-size: 1.6rem;
   max-width: 70rem;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

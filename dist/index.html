@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Work+Sans:wght@300;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./main.css" />
     <link
       rel="shortcut icon"
       type="image/svg"
@@ -22,12 +22,27 @@
     />
   </head>
   <body>
-    <a class="mobile-icon-container">
-      <img
-        src="./img/mobile-menu-icon-red.svg"
-        class="mobile-icon-container__icon"
-      />
-    </a>
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu__links">
+        <a class="mobile-menu__exit-container">
+          <img
+            src="./img/menu-exit-item.svg"
+            class="mobile-menu__exit-icon"
+            id="exit-icon"
+          />
+        </a>
+        <a
+          href="./index.html"
+          class="mobile-menu__link"
+          data-selected="selected"
+          >Portfolio</a
+        >
+        <a href="./skills.html" class="mobile-menu__link">Skills</a>
+        <a href="./about.html" class="mobile-menu__link">About</a>
+        <a href="./contact.html" class="mobile-menu__link">Contact</a>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <a href="./index.html" class="header__link">
@@ -42,6 +57,13 @@
         <a class="header__a" href="./about.html">About</a>
         <a class="header__a" href="./contact.html">Contact</a>
       </nav>
+      <a class="mobile-icon-container" id="hamburger">
+        <img
+          src="./img/mobile-menu-icon-red.svg"
+          class="mobile-icon-container__icon"
+          id="mobile-icon"
+        />
+      </a>
     </header>
     <section class="hero">
       <div class="hero__container">
@@ -106,12 +128,12 @@
                 <p class="portfolio-item__label">PERSONAL PROJECT</p>
                 <h3 class="portfolio-item__title">This Site!</h3>
                 <p class="portfolio-item__sub-title">
-                  HTML | BEM | CUSTOM CSS & SASS | JQUERY | FIGMA | GULP |
-                  PHOTOSHOP | NETLIFLY
+                  HTML | BEM | SASS | JAVASCRIPT | FIGMA | GULP | PHOTOSHOP |
+                  NETLIFLY
                 </p>
                 <p class="portfolio-item__description">
                   A static HTML site that I first designed in Figma then
-                  translated to code with HTML, CSS, SASS & jQuery. I managed
+                  translated to code with HTML, SASS & JavaScript. I managed
                   version control with Git & Github and deployed with Netlifly.
                 </p>
                 <div class="portfolio-item__button-box">
@@ -198,11 +220,6 @@
         <a href="./contact.html" class="footer__contact">Get in touch</a>
       </section>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

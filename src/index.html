@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Stanley | My Portfolio</title>
+    <meta
+      name="description"
+      content="I'm John Stanley and this is my portfolio. Thanks for stopping by!"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Work+Sans:wght@300;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./img/john-stanley-portfolio-favicon.svg"
+    />
+  </head>
+  <body>
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu__links">
+        <a class="mobile-menu__exit-container">
+          <img
+            src="./img/menu-exit-item.svg"
+            class="mobile-menu__exit-icon"
+            id="exit-icon"
+          />
+        </a>
+        <a
+          href="./index.html"
+          class="mobile-menu__link"
+          data-selected="selected"
+          >Portfolio</a
+        >
+        <a href="./skills.html" class="mobile-menu__link">Skills</a>
+        <a href="./about.html" class="mobile-menu__link">About</a>
+        <a href="./contact.html" class="mobile-menu__link">Contact</a>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="./index.html" class="header__link">
+          <img src="/img/john-stanley-logo.svg" class="header__logo" />
+        </a>
+      </div>
+      <nav class="header__nav">
+        <a class="header__a" href="./index.html" data-selected="selected"
+          >Portfolio</a
+        >
+        <a class="header__a" href="./skills.html">Skills</a>
+        <a class="header__a" href="./about.html">About</a>
+        <a class="header__a" href="./contact.html">Contact</a>
+      </nav>
+      <a class="mobile-icon-container" id="hamburger">
+        <img
+          src="./img/mobile-menu-icon-red.svg"
+          class="mobile-icon-container__icon"
+          id="mobile-icon"
+        />
+      </a>
+    </header>
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__left">
+          <h1 class="hero__title">
+            johnStanley<span class="white">(</span
+            ><span class="blue-thin">myPortfolio</span
+            ><span class="white">){</span>
+          </h1>
+          <p class="hero__text">
+            Hello, World! I’m John, a
+            <a
+              href="https://northcoders.com/"
+              target="blank"
+              rel="nofollow"
+              class="hero__link"
+              >Northcoders</a
+            >
+            graduate based in Leeds with a variety of digital skills. I love
+            design and front end development and I’m currently looking for my
+            first role in the industry.
+          </p>
+          <h1 class="hero__title white">};</h1>
+          <div class="hero__button-box">
+            <button class="btn btn--blue">View CV</button>
+            <button class="btn btn--ghost-blue">Say Hi</button>
+          </div>
+        </div>
+
+        <img
+          src="./img/john-stanley-hero-portrait-graphic.png"
+          class="hero__img"
+        />
+      </div>
+    </section>
+    <main class="section">
+      <div class="section__background">
+        <div class="section__container">
+          <div class="section-title">
+            <h2 class="section-title__heading">.my-work</h2>
+            <img
+              src="./img/equality-operator-graphic.svg"
+              class="section-title__img"
+            />
+          </div>
+          <div class="my-work">
+            <p class="my-work__text">
+              View a selection of my work below consisting of personal portfolio
+              pieces and real client work.
+            </p>
+          </div>
+
+          <div class="portfolio">
+            <div class="portfolio-item__outer">
+              <div class="portfolio-item__image-box">
+                <img
+                  src="./img/john-stanley-portfolio-site-image.jpg"
+                  class="portfolio-item__image"
+                />
+              </div>
+              <div class="portfolio-item portfolio-item--1">
+                <p class="portfolio-item__label">PERSONAL PROJECT</p>
+                <h3 class="portfolio-item__title">This Site!</h3>
+                <p class="portfolio-item__sub-title">
+                  HTML | BEM | SASS | JAVASCRIPT | FIGMA | GULP | PHOTOSHOP |
+                  NETLIFLY
+                </p>
+                <p class="portfolio-item__description">
+                  A static HTML site that I first designed in Figma then
+                  translated to code with HTML, SASS & JavaScript. I managed
+                  version control with Git & Github and deployed with Netlifly.
+                </p>
+                <div class="portfolio-item__button-box">
+                  <button class="btn btn--black btn--small">Figma</button>
+                  <button class="btn btn--yellow btn--small">Github</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item__outer">
+              <div class="portfolio-item__image-box">
+                <img
+                  src="./img/rabbit-hole-coffee-image.jpg"
+                  class="portfolio-item__image"
+                />
+              </div>
+              <div class="portfolio-item portfolio-item--1">
+                <p class="portfolio-item__label">CLIENT WORK</p>
+                <h3 class="portfolio-item__title">This Site!</h3>
+                <p class="portfolio-item__sub-title">
+                  WORDPRESS | ELEMENTOR | WOOCOMMERCE | FIGMA | MAILCHIMP | SEO
+                </p>
+                <p class="portfolio-item__description">
+                  An e-commerce website I built for a client. Designed without
+                  templates in Figma and implemented in Wordpress using
+                  Elementor, Woocommerce and some custom CSS. I hosted it, setup
+                  Mailchimp and basic onsite SEO.
+                </p>
+                <div class="portfolio-item__button-box">
+                  <button class="btn btn--black btn--small">Figma</button>
+                  <a
+                    href="https://rabbitholecoffee.co.uk/"
+                    class="btn btn--yellow btn--small btn__link"
+                    target="blank"
+                    rel="nofollow"
+                  >
+                    Live Site
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item__outer">
+              <div class="portfolio-item__image-box">
+                <img
+                  src="./img/john-stanley-portfolio-site-image.jpg"
+                  class="portfolio-item__image"
+                />
+              </div>
+              <div class="portfolio-item portfolio-item--1">
+                <p class="portfolio-item__label">PERSONAL PROJECT</p>
+                <h3 class="portfolio-item__title">This Site!</h3>
+                <p class="portfolio-item__sub-title">
+                  HTML | SASS | JQUERY | FIGMA | PHOTOSHOP NETLIFLY
+                </p>
+                <p class="portfolio-item__description">
+                  This portfolio site, designed in Figma and coded from scratch
+                  with HTML, CSS, SASS & jQuery in VS Code. Version control
+                  managed with Git & Github and deployed with Netlifly.
+                </p>
+                <div class="portfolio-item__button-box">
+                  <button class="btn btn--black btn--small">Figma</button>
+                  <button class="btn btn--yellow btn--small">Github</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="footer__container">
+        <p class="footer__copyright">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          - John Stanley
+        </p>
+        <div class="footer__logo-box">
+          <img src="./img/github-logo.svg" class="footer__github-logo" />
+          <img src="./img/linkedin-logo.svg" class="footer__linkedin-logo" />
+        </div>
+        <a href="./contact.html" class="footer__contact">Get in touch</a>
+      </section>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

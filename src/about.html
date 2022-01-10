@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Stanley | About</title>
+    <meta
+      name="description"
+      content="Learn more about John Stanley, junior web developer and designer based in Leeds"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Work+Sans:wght@300;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./img/john-stanley-portfolio-favicon.svg"
+    />
+  </head>
+  <body>
+    <a class="mobile-icon-container" id="hamburger">
+      <img
+        src="./img/mobile-menu-icon-red.svg"
+        class="mobile-icon-container__icon"
+        id="mobile-icon"
+      />
+    </a>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu__links">
+        <a class="mobile-menu__exit-container">
+          <img
+            src="./img/menu-exit-item.svg"
+            class="mobile-menu__exit-icon"
+            id="exit-icon"
+          />
+        </a>
+        <a href="./index.html" class="mobile-menu__link">Portfolio</a>
+        <a href="./skills.html" class="mobile-menu__link">Skills</a>
+        <a
+          href="./about.html"
+          class="mobile-menu__link"
+          data-selected="selected"
+          >About</a
+        >
+        <a href="./contact.html" class="mobile-menu__link">Contact</a>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="./index.html" class="header__link">
+          <img src="/img/john-stanley-logo.svg" class="header__logo" />
+        </a>
+      </div>
+      <nav class="header__nav">
+        <a class="header__a" href="./index.html">Portfolio</a>
+        <a class="header__a" href="./skills.html">Skills</a>
+        <a class="header__a" href="./about.html" data-selected="selected"
+          >About</a
+        >
+        <a class="header__a" href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="section">
+      <section class="section__background">
+        <section class="section__container">
+          <div class="section-title">
+            <h2 class="section-title__heading">.my-story</h2>
+            <img
+              src="./img/equality-operator-graphic.svg"
+              class="section-title__img"
+            />
+          </div>
+          <section class="about">
+            <div class="about__row">
+              <div class="about__column">
+                <div class="image-block">
+                  <img
+                    src="./img/john-with-his-family.jpg"
+                    class="image-block__img"
+                  />
+                  <div class="image-block__background"></div>
+                </div>
+              </div>
+
+              <div class="about__double-column">
+                <h3 class="about-item__title">My journey so far</h3>
+                <p class="about-item__text">
+                  Hi, I’m John, and here I am with my wife Fay and daughter,
+                  Harper. I’m from London originally, but now reside in the
+                  leafy suburb of Oakwood in Leeds. My journey to becoming a
+                  professional web developer has been quite a long one. I
+                  started to learn to code properly in December 2020, but in the
+                  previous five years to that I setup and ran the website for my
+                  travel business on Wordpress using no code solutions such as
+                  page builders and plugins. I learned a lot about SEO, PPC and
+                  digital marketing, implementing many of the onsite SEO
+                  optimisations myself. I worked with an agency who provided
+                  content marketing and link building and we managed to rank on
+                  page one for certain targeted keywords. In 2021 I completed
+                  the Northcoders bootcamp and I’m now looking for my first full
+                  time position as a junior front end developer.
+                </p>
+              </div>
+            </div>
+
+            <div class="about__row about__row--alternate">
+              <div class="about__double-column">
+                <h3 class="about-item__title">
+                  My interests as a junior developer
+                </h3>
+                <p class="about-item__text">
+                  I love visual design and have particularly enjoyed learning
+                  CSS and the challenge of translating designs into code. For
+                  this portfolio site I used Sass for the first time alongside
+                  the BEM naming methodology and I’d love to build on these
+                  skills. I also want to take a deeper dive into CSS frameworks
+                  such as Material UI and Tailwind. I am really interested in
+                  the JAMStack approach and the idea of headless architecture.
+                  I’d love to learn more about implementing headless CMS and
+                  headless ecommerce. So far I have been using create-react-app
+                  but I would like to build on this by learning Gatsby and
+                  NextJS. I’d also love to have some exposure to Vue to see how
+                  it compares to React.
+                </p>
+              </div>
+
+              <div class="about__column about__column--alternate">
+                <div class="image-block image_block--alternate">
+                  <img
+                    src="./img/john-stanley-leeds.jpg"
+                    class="image-block__img image-block__img--alternate"
+                  />
+                  <div
+                    class="
+                      image-block__background image-block__background--alternate
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__row">
+              <div class="about__column">
+                <div class="image-block">
+                  <img
+                    src="./img/john-and-fay-in-torres-del-paine.jpg"
+                    class="image-block__img"
+                  />
+                  <div
+                    class="
+                      image-block__background image-block__background--yellow
+                    "
+                  ></div>
+                </div>
+              </div>
+
+              <div class="about__double-column">
+                <h3 class="about-item__title">
+                  Some other random facts about me!
+                </h3>
+                <p class="about-item__text">
+                  I’m a trained barista and love a great coffee as well as food
+                  and drink in general! My chef heroes are Anthony Bourdain,
+                  Rick Stein and Keith Floyd.<br />
+                  <br />
+                  I lived in Granada, Spain for six months and have a real
+                  passion and appreciation for Spanish food and culture. I’ve
+                  also travelled all across Central & South America.<br /><br />
+                  I love real vinyl records and have a modest collection with
+                  everything from Neil Young to classic Brazilian 45’s and a lot
+                  of drum and bass among other electronic music.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__container">
+        <p class="footer__copyright">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          - John Stanley
+        </p>
+        <div class="footer__logo-box">
+          <img src="./img/github-logo.svg" class="github-logo" />
+          <img src="./img/linkedin-logo.svg" class="linkedin-logo" />
+        </div>
+        <a href="./contact.html" class="footer__contact">Get in touch</a>
+      </section>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
