@@ -2,8 +2,10 @@
 MEDIA QUERY MIXIN
 Breakpoint arguments:
 
-0px - 600px:      Phone
-600px - 1020px:   Tablet
+0 - 450px:        Small-phone 
+450px - 600px:    Phone
+600px - 912px:    Large-phone 
+912px - 1020px:   Tablet
 1020px - 1800px:  Normal styles
 1800px plus:      Big desktop
 
@@ -15,8 +17,20 @@ Therefore, 600px divided by 16px = 37.5em
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media (max-width: 28.125em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large-phone {
+    @media (max-width: 57em) {
       @content;
     }
   }

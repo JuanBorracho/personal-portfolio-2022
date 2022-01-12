@@ -4,9 +4,16 @@
   color: $color-grey;
   font-size: 1.4rem;
   padding: 3rem 4rem;
-
   position: absolute;
   bottom: 0;
+
+  @include respond(large-phone) {
+    padding: 3rem 3rem;
+  }
+
+  @include respond(small-phone) {
+    padding: 2rem 3rem;
+  }
 
   &__container {
     display: flex;

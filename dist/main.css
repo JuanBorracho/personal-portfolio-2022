@@ -2,8 +2,10 @@
 MEDIA QUERY MIXIN
 Breakpoint arguments:
 
-0px - 600px:      Phone
-600px - 1020px:   Tablet
+0 - 450px:        Small-phone 
+450px - 600px:    Phone
+600px - 912px:    Large-phone 
+912px - 1020px:   Tablet
 1020px - 1800px:  Normal styles
 1800px plus:      Big desktop
 
@@ -389,11 +391,26 @@ body {
   }
 }
 .section__background {
-  margin: 4rem;
+  margin: 4rem 4rem 5rem 4rem;
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   min-height: 75vh;
+}
+@media (max-width: 57em) {
+  .section__background {
+    margin: 3rem 3rem 4rem 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .section__background {
+    margin: 2rem 2rem 3rem 2rem;
+  }
+}
+@media (max-width: 28.125em) {
+  .section__background {
+    margin: 1rem 1rem 0 1rem;
+  }
 }
 .section__container {
   max-width: 132rem;
@@ -404,6 +421,11 @@ body {
 .section-title {
   transform: translateY(-40%);
   text-align: center;
+}
+@media (max-width: 37.5em) {
+  .section-title {
+    transform: none;
+  }
 }
 .section-title__heading {
   color: #162127;
@@ -416,12 +438,27 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 57em) {
+  .header {
+    padding: 3rem 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .header {
+    padding: 3rem 2rem;
+  }
+}
 .header__logo-box {
   display: flex;
   align-items: center;
 }
 .header__logo {
   max-width: 15rem;
+}
+@media (max-width: 28.125em) {
+  .header__logo {
+    max-width: 14rem;
+  }
 }
 .header__nav {
   display: flex;
@@ -459,6 +496,16 @@ body {
   padding: 3rem 4rem;
   position: absolute;
   bottom: 0;
+}
+@media (max-width: 57em) {
+  .footer {
+    padding: 3rem 3rem;
+  }
+}
+@media (max-width: 28.125em) {
+  .footer {
+    padding: 2rem 3rem;
+  }
 }
 .footer__container {
   display: flex;
@@ -524,15 +571,13 @@ body {
 
 .hero {
   background: linear-gradient(287.77deg, #162127 13.16%, #152a35 72.99%);
-  max-height: 800px;
   overflow: hidden;
-  position: relative;
 }
 .hero__container {
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 4rem 0 6rem;
+  padding: 2rem 4rem 0 4rem;
   max-width: 132rem;
   margin: 0 auto;
 }
@@ -578,7 +623,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 2rem 0 3rem 0;
+  padding: 3rem 3rem 0 3rem;
 }
 .my-work__text {
   font-size: 1.6rem;
