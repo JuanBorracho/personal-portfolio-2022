@@ -33,6 +33,7 @@
     display: flex;
     gap: 1rem;
     flex-basis: 30%;
+    align-items: center;
 
     @include respond(phone) {
       margin: 2rem 0;
@@ -41,7 +42,7 @@
 
   &__github-logo,
   &__linkedin-logo {
-    max-width: 4.2rem;
+    max-width: 4rem;
   }
 
   &__contact {

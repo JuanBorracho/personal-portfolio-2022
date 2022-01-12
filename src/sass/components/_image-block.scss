@@ -12,9 +12,21 @@
       transform: translate(-2rem, 2rem);
     }
 
+    @include respond(tablet) {
+      &:hover {
+        transform: none;
+      }
+    }
+
     &--alternate {
       &:hover {
         transform: translate(2rem, 2rem);
+      }
+
+      @include respond(tablet) {
+        &:hover {
+          transform: none;
+        }
       }
     }
   }
