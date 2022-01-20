@@ -403,7 +403,7 @@ body {
   position: absolute;
   top: 4.5rem;
   right: 4rem;
-  z-index: 50;
+  z-index: 11;
   cursor: pointer;
   transition: all 0.2s ease;
   display: none;
@@ -748,5 +748,18 @@ body {
 .my-work__text {
   font-size: 1.6rem;
   max-width: 70rem;
+}
+
+.skills-grid {
+  padding: 6rem 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skills-grid__item {
+  text-align: center;
+  min-width: 10rem;
 }
 /*# sourceMappingURL=main.css.map */

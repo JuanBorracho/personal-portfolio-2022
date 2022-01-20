@@ -1,0 +1,13 @@
+.skills-grid {
+  padding: 6rem 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__item {
+    text-align: center;
+    min-width: 10rem;
+  }
+}
