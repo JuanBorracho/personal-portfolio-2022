@@ -46,3 +46,20 @@
     color: $color-black;
   }
 }
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 3rem 0 3rem;
+
+  &__text {
+    font-size: 1.6rem;
+    max-width: 70rem;
+
+    &--skills {
+      max-width: 110rem;
+      font-size: 1.6rem;
+    }
+  }
+}

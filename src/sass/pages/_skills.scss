@@ -9,5 +9,11 @@
   &__item {
     text-align: center;
     min-width: 10rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

@@ -72,7 +72,7 @@
     transform: scale(0.8);
   }
 
-  @include respond(phone) {
+  @include respond(tablet) {
     display: block;
   }
 }

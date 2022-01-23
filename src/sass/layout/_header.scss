@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
 
-    @include respond(phone) {
+    @include respond(tablet) {
       display: none;
     }
   }

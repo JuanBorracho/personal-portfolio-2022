@@ -114,15 +114,3 @@
     display: flex;
   }
 }
-
-.my-work {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 3rem 3rem 0 3rem;
-
-  &__text {
-    font-size: 1.6rem;
-    max-width: 70rem;
-  }
-}
