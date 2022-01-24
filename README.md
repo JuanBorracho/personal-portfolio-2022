@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. [Project Overview](/personal-portfolio-2022#project-overview)
+1. [Project Overview](/github.com/JuanBorracho/personal-portfolio-2022#project-overview)
 2. [Dev Dependencies]()
 3. [Design]()
    - [Theme & Concept]()
