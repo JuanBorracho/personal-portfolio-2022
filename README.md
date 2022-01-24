@@ -1,18 +1,37 @@
 # My Personal Portfolio 2022
 
+## Table of Contents
+
+1. [Project Overview](/personal-portfolio-2022#project-overview)
+2. [Dev Dependencies]()
+3. [Design]()
+   - [Theme & Concept]()
+   - [Typography]()
+   - [Assets]()
+   - [Colours]()
+   - [Desktop First]()
+4. [CSS Reset]()
+5. [REM Font Size Method]()
+6. [BEM]()
+7. [Inheritance]()
+8. [Sass]()
+9. [Responsive Design]()
+10. [Gulp]()
+11. [Challenges]()
+
 ## Project Overview
 
 The goal of this project was to design and then build a personal portfolio site to showcase my work.
 
 My main aim was to practice a variety of new CSS skills and techniques that I have learned alongside using the BEM naming methodology and Sass for the first time.
 
-The only Javascript used in this project is for the mobile menu and grid filters. I used vanilla Javascript (ES6).
+My secondary aim was to gain experience using the build tool, Gulp, for the first time.
 
-I also wanted to gain experience using the build tool, Gulp, for the first time.
+The only Javascript used in this project is for the mobile menu. I used vanilla Javascript (ES6).
 
 Below I will explain some of the techniques and technologies I have used as well as some of the challenges I faced during this project.
 
-## Getting Started
+## Dev Dependencies
 
 ## Design
 
@@ -101,6 +120,8 @@ When writing my media queries, I needed to keep in mind that rem units would not
 I also chose to write my own custom breakpoints which were based on the point at which my particular design broke, rather than using arbitary values for phone, tablet and desktop.
 
 I needed to keep in mind that the order of the media queries is important due to the cascading nature of CSS.
+
+One thing I have not done in this project is create responsive images. I am aware, for example, that you can use the `srcset` attribute to render different versions of the same image depending on the screen resolution the user is viewing on. If it was a retina screen, it would be 2x the size.
 
 ## Gulp
 
