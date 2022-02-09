@@ -10,16 +10,6 @@
 .portfolio-item {
   padding: 0 2rem 2rem 2rem;
 
-  &:hover {
-    box-shadow: 0.1rem 0.7rem 1rem 0.4rem rgba(0, 0, 0, 0.08);
-  }
-
-  @include respond(tablet) {
-    &:hover {
-      box-shadow: none;
-    }
-  }
-
   &__outer {
     background-color: #fff;
     text-align: center;

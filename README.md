@@ -1,24 +1,5 @@
 # My Personal Portfolio 2022
 
-## Table of Contents
-
-1. [Project Overview](/github.com/JuanBorracho/personal-portfolio-2022#project-overview)
-2. [Dev Dependencies]()
-3. [Design]()
-   - [Theme & Concept]()
-   - [Typography]()
-   - [Assets]()
-   - [Colours]()
-   - [Desktop First]()
-4. [CSS Reset]()
-5. [REM Font Size Method]()
-6. [BEM]()
-7. [Inheritance]()
-8. [Sass]()
-9. [Responsive Design]()
-10. [Gulp]()
-11. [Challenges]()
-
 ## Project Overview
 
 The goal of this project was to design and then build a personal portfolio site to showcase my work.
@@ -31,8 +12,6 @@ The only Javascript used in this project is for the mobile menu. I used vanilla 
 
 Below I will explain some of the techniques and technologies I have used as well as some of the challenges I faced during this project.
 
-## Dev Dependencies
-
 ## Design
 
 ### Theme & Concept
@@ -41,7 +20,7 @@ The general theme and inspiration behind this design is coding and code editors 
 
 ### Typography
 
-For the typography, I chose Work Sans for the heading text with a strong font weight because it is a very bold, striking, modern, sans serif font, which is easy to read, captures attention and works well for the web. I paired this with a monospace font type for the body text to reflect the coding/code editor theme in the typography. The font I chose was PT Mono because it is one of the more elegant looking monospace fonts!
+For the typography I used the freely available google fonts. I chose Work Sans for the heading text with a strong font weight because it is a very bold, striking, modern, sans serif font, which is easy to read, captures attention and works well for the web. I paired this with a monospace font type for the body text to reflect the coding/code editor theme in the typography. The font I chose was PT Mono because it is one of the more elegant looking monospace fonts!
 
 ### Assets
 
