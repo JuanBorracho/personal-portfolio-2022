@@ -126,6 +126,10 @@ Similarly with HTML I have just piped the files from the src folder to the dist 
 
 For my images, I chose not to use gulp-imagemin to optimise my images because I have optimised the images already by processing them through https://imagecompressor.com/ and adding the optimised file to the project. Therefore my image task simply pipes the images from the src folder to the dist folder.
 
+## Deployment
+
+I used Netlify to deploy this project and connect my custom domain that I purchased on Namecheap. I made sure that it was deployed from the dist folder, rather than the root directory.
+
 ## Challenges
 
 One of the main challenges I encountered was the responsive styling. For example, I noticed that the hover effects I had designed on desktop didn't work on mobile because there is no hover on mobile! This meant that they would run once, but then stick. Therefore, in order to overcome this, I just removed all hover styles from tablet size downward.
