@@ -8,7 +8,7 @@
 
   &__item {
     text-align: center;
-    min-width: 10rem;
+    flex-basis: 10rem;
     transition: all 0.3s ease;
     cursor: pointer;
 
@@ -21,7 +21,7 @@
     margin-top: 1rem;
   }
 
-  &__img {
-    max-width: 10rem;
+  &__svg {
+    width: 80%;
   }
 }
