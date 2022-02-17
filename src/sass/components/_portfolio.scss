@@ -9,6 +9,7 @@
 
 .portfolio-item {
   padding: 0 2rem 2rem 2rem;
+  transition: display 5000 ease;
 
   &__outer {
     background-color: #fff;
@@ -51,4 +52,37 @@
     display: flex;
     justify-content: center;
   }
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 6rem 3rem;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    border-radius: 2.5rem;
+    background-color: lighten($color-blue, 12%);
+    color: lighten($color-black, 30%);
+    padding: 0.8rem 0;
+    width: 12rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-black;
+    }
+  }
+}
+
+.filter-selected {
+  background-color: $color-blue;
+  color: $color-black;
 }
